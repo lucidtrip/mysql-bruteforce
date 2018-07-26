@@ -21,8 +21,7 @@ and now start bruteforce with
 ```bash
 bash mysqlfb.sh results.txt pass.dic
 ```
-for setting the threads and timeout look in the script line 14 with xargs...
-its the first version in future come a better handling
+for setting the threads and timeout look in the script line 11!
 
 ## like u have a nice day
 :P
