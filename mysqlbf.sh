@@ -21,7 +21,7 @@ elif [ -s "$1" ]; then
     cat result_mysql-cut.txt | sort | uniq > result_mysql-cut2.txt
     rm result_mysql-cut.txt
     mv result_mysql-cut2.txt result_mysql-cut.txt
-    xargs -i -a result_mysql-cut.txt -n 1 -P 5 bash "$0" "{}" txt/pass_pma.txt root > "${0}-mysqlbrute.log"
+    xargs -i -a result_mysql-cut.txt -n 1 -P ${THREADS} bash "$0" "{}" txt/pass_pma.txt root > "${0}-mysqlbrute.log"
 else
     readonly HOSTNAME="$1"
     readonly PASSDIC="$2"
