@@ -9,9 +9,17 @@ you need a file like
 192.168.255.255:3306
 etc...
 ```
-and start bruteforce with
+and a pass list file
+```
+root
+admin
+123
+etc...
+```
+
+and now start bruteforce with
 ```bash
-bash mysqlfb.sh results.txt
+bash mysqlfb.sh results.txt pass.dic
 ```
 for setting the threads and timeout look in the script line 14 with xargs...
 its the first version in future come a better handling
